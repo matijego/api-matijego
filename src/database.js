@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-
-const urlMongo = 'mongodb+srv://matijego:matias199797@cluster0.fwq90.mongodb.net/Cluster0?retryWrites=true&w=majority';
+//Intercambiar credenciales con datos propios
+const urlMongo = 'mongodb+srv://<USUARIO>:<CONTRASEÑA>@cluster0.fwq90.mongodb.net/<NOMBREDELCLUSTER>?retryWrites=true&w=majority';
 
 mongoose.connect(urlMongo)
     .then(db => console.log('La base de datos está conectada'))
